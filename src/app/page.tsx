@@ -123,7 +123,7 @@ export default function Home() {
                   {
                     label: "Platform", href: "#platform", children: [
                       { label: "Cybersecurity", href: "/platform/cybersecurity" },
-                      { label: "InMind AI", href: "/platform/inmind" },
+                      { label: "InMind AI", href: "https://in-mind-app.vercel.app/" },
                     ]
                   },
                   { label: "Services", href: "#services" },
@@ -157,6 +157,7 @@ export default function Home() {
                       <motion.a
                         key={child.label}
                         href={child.href}
+                        {...(child.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                         onClick={() => setMenuOpen(false)}
                         className="group flex items-center justify-between py-3 md:py-3.5 pl-6 md:pl-10 border-b border-black/5 transition-all"
                         initial={{ opacity: 0, x: -40 }}
@@ -367,9 +368,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="relative z-10 pt-5 border-t border-white/[0.05]">
-                    <Link href="/platform/inmind" className="inline-flex items-center gap-2 text-sm font-medium text-white/50 hover:text-white transition-all group/link">
+                    <a href="https://in-mind-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-white/50 hover:text-white transition-all group/link">
                       Explore InMind <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </FadeIn>

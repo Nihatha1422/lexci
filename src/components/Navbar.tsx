@@ -62,8 +62,10 @@ export default function Navbar() {
                       <div className="text-xs text-white/35 font-light mt-0.5">Autonomous cyber defense</div>
                     </div>
                   </Link>
-                  <Link
-                    href="/platform/inmind"
+                  <a
+                    href="https://in-mind-app.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/[0.06] transition-all group"
                   >
                     <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center shrink-0 group-hover:bg-purple-500/20 transition-colors">
@@ -73,7 +75,7 @@ export default function Navbar() {
                       <div className="font-medium">InMind AI</div>
                       <div className="text-xs text-white/35 font-light mt-0.5">Behavioral intelligence</div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -119,10 +121,10 @@ export default function Navbar() {
             <Shield className="w-4 h-4 text-blue-400" />
             <span className="font-medium">Cybersecurity</span>
           </Link>
-          <Link href="/platform/inmind" className="flex items-center gap-3 px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all" onClick={() => setIsOpen(false)}>
+          <a href="https://in-mind-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all" onClick={() => setIsOpen(false)}>
             <Brain className="w-4 h-4 text-purple-400" />
             <span className="font-medium">InMind AI</span>
-          </Link>
+          </a>
           <Link href="/capabilities" className="block px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all font-medium" onClick={() => setIsOpen(false)}>
             Capabilities
           </Link>

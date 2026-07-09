@@ -22,13 +22,19 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 { href: "/platform/cybersecurity", label: "Cybersecurity" },
-                { href: "/platform/inmind", label: "InMind AI" },
+                { href: "https://in-mind-app.vercel.app/", label: "InMind AI" },
                 { href: "/capabilities", label: "Engineering" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-black/40 hover:text-black transition-colors text-sm font-light">
-                    {link.label}
-                  </Link>
+                  {link.href.startsWith("http") ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-black/40 hover:text-black transition-colors text-sm font-light">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className="text-black/40 hover:text-black transition-colors text-sm font-light">
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
