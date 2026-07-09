@@ -100,8 +100,8 @@ export default function ContactPage() {
                         <div>
                           <p className="text-[10px] font-medium tracking-widest text-white/30 uppercase mb-1">Hyderabad Office</p>
                           <p className="text-white/70 font-light leading-relaxed">
-                            Kharkhana,<br />
-                            Hyderabad, Telangana<br />
+                            HITEC City,<br />
+                            Hyderabad, Telangana 500081<br />
                             India
                           </p>
                         </div>
