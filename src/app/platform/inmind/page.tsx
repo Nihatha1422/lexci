@@ -31,7 +31,7 @@ export default function InMindPage() {
           </FadeIn>
           <FadeIn delay={0.4}>
             <Link 
-              href="/InMind-pitch-deck.pdf" 
+              href="https://in-mind-app.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="aiera-button-solid inline-flex items-center gap-2 px-7 py-3.5 text-sm group"
