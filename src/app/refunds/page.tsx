@@ -160,7 +160,6 @@ export default function RefundsAndCancellationPage() {
       </section>
 
       <div className="shimmer-line opacity-50" />
-      <Footer />
     </div>
   );
 }

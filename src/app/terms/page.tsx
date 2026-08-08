@@ -180,7 +180,6 @@ export default function TermsAndConditionsPage() {
       </section>
 
       <div className="shimmer-line opacity-50" />
-      <Footer />
     </div>
   );
 }
